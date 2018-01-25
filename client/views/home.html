@@ -1,0 +1,36 @@
+<div class="row">
+    <div>
+      <center><h3>Summarization</h3></center> 
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <form role="form" ng-submit="getSummary()">                             
+        <div class="form-group">                          
+          <div class="row">
+		    <label>Enter paragraph:</label>
+            <textarea ng-model="paragraph" rows="6" style="width: 100%; margin-top: 10px; margin-bottom: 30px"></textarea>
+			<label>Enter no of sentences:</label>
+			<input ng-model="no_of_sentences" type="int" style="width: 100%; margin-top: 10px; margin-bottom: 50px"></input>
+            
+
+            <div>
+              <input type="submit" value="Get Summary" class="btn btn-primary"/>            
+            </div>
+
+            <div class="panel panel-default" style="margin-top: 20px;">
+            <div class="panel-heading">
+              <h3 class="panel-title">Result</h3>
+            </div>
+            <div class="panel-body">
+              <p>{{summary}}</p>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+
